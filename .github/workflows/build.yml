@@ -16,12 +16,17 @@ jobs:
       - name: Install Cordova
         run: npm install -g cordova
 
+      - name: Fix Folder Structure
+        run: |
+          mkdir www
+          cp "Slide Rush Mobile.html" www/index.html
+
       - name: Create iOS Project
         run: |
           cordova platform add ios
           cordova build ios --simulator
           
-      - name: Locate and Save IPA File
+      - name: Locate and Save App Package
         uses: actions/upload-artifact@v4
         with:
           name: ios-app-package
