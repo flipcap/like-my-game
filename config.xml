@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.flipcap.sliderush" version="1.0.0" xmlns="http://w3.org">
+    <name>Slide Rush Mobile</name>
+    <content src="Slide Rush Mobile.html" />
+</widget>
